@@ -1,0 +1,243 @@
+body{
+  font-family: "DM Sans", sans-serif;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(white, white) padding-box, 
+              linear-gradient(90deg, #3F71FF, #AA54FF) border-box; /* Apply the gradient as background */
+  border: 1px solid transparent;
+  box-sizing: border-box;
+}
+
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input {
+  width: 90%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 5px;
+  width: 350px;
+  margin-top: 10px;
+}
+
+.input-icon {
+  margin-right: 10px;
+  font-size: 20px; /* Blue color for the icon */
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+h2, h3 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  color: #888;
+  font-size: 12px;
+}
+
+
+/* Basic styling for the navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 50px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  width: 94vw;
+}
+
+.navbar img{
+  width: 50%;
+}
+/* Links */
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 20px; /* Spacing between links */
+}
+
+.navbar-links li {
+  font-size: 18px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar-links a:hover {
+  color: #0056b3; /* Darker shade on hover */
+}
+
+/* For responsiveness */
+@media (max-width: 768px) {
+  .navbar {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .navbar-links {
+      flex-direction: column;
+      gap: 10px;
+  }
+}
+
+.main-container{
+  display: flex;
+  width: 95vw;
+  justify-content: center;
+  align-items: center;
+  height: 88vh;
+}
+
+.intro{
+  padding: 50px;
+  text-align: justify;
+}
+
+.verified-icon {
+  position: absolute;
+  right: 10px; /* Position the icon inside the input field */
+  top: 50%;
+  transform: translateY(-50%);
+  color: green;
+  font-size: 24px; /* Adjust the size as needed */
+}
+
+.verify-btn, .continue-btn {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+}
+
+.verify-btn:hover, .continue-btn:hover {
+  background-color: #0056b3;
+}
+
+input:disabled {
+  background-color: #f0f0f0; /* Grey background for disabled inputs */
+  cursor: not-allowed;
+}
+
+
+.sidebar {
+  height: 90vh; /* Full height */
+  width: 5%; /* Width of the sidebar */
+  background-color: #f8f9fa; /* Light background color */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.sidebar-icon {
+  cursor: pointer;
+}
+
+.sidebar-icon:hover {
+  background-color: #e0e0e0; /* Highlight on hover */
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.main-page{
+  display: flex;
+}
+
+.job-list{
+  width: 95%;
+}
+
+.job-btn{
+  display: inline-block;
+  width: 15%;
+  margin: 10px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+}
+
+
+.job-form {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px;
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.textarea-field {
+  height: 150px;
+  resize: none;
+}
+
+.submit-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
